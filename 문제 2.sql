@@ -1,0 +1,1 @@
+SELECT * FROM hr.emp ORDER BY deptno ASC, sal DESC

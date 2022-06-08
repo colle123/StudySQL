@@ -1,0 +1,1 @@
+SELECT distinct AVG(SAL) OVER(PARTITION BY deptno) AS [AVG_SAL], DEPTNO FROM hr.emp order by DEPTNO asc;

@@ -1,0 +1,11 @@
+USE shopDB;
+GO
+CREATE FUNCTION hr.Tax(@BeforeTax INT) RETURNS INT
+AS
+	BEGIN
+		DECLARE @AfterTAX INT
+		SET @AfterTAX = @BeforeTax * 0.95
+		RETURN(@AfterTAX)
+	END
+GO
+SELECT EMPNO, ENAME, SAL, hr.Tax(SAL) AS [AFTERTAX] FROM hr.emp

@@ -1,0 +1,1 @@
+SELECT DEPTNO, JOB, AVG(SAL) AS [AVG_SAL] FROM hr.emp where sal <= 3000 group by job, deptno

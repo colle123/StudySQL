@@ -1,0 +1,1 @@
+SELECT ename,sal, sal * 12 + comm as annsal, comm FROM hr.emp

@@ -1,0 +1,1 @@
+select empno, ename, hiredate, DATEADD(year, 10, hiredate) as work10year from hr.emp

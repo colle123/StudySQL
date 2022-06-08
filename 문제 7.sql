@@ -1,0 +1,1 @@
+SELECT * FROM hr.emp WHERE ename NOT LIKE '%AM%'

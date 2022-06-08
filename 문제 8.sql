@@ -1,0 +1,1 @@
+select * from hr.emp where mgr not like 'null' 
